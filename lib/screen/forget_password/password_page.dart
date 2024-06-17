@@ -15,10 +15,10 @@ class _PasswordPageState extends State<PasswordPage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body:  Column(
+        body: Column(
           children: [
             Container(
-              padding: EdgeInsets.fromLTRB(0,100,120, 0),
+              padding: EdgeInsets.fromLTRB(0, 100, 120, 0),
               child: Text(
                 'Change New Password',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -28,41 +28,43 @@ class _PasswordPageState extends State<PasswordPage> {
               padding: const EdgeInsets.fromLTRB(35, 7.0, 100, 0),
               child: Text('Enter a different password with the previous'),
             ),
-         Padding(
-            padding: const EdgeInsets.fromLTRB(0,60,225,0),
-            child: Text('New Password',style: TextStyle(fontSize: 14),),
-          ),
-          Container(
-            padding: EdgeInsets.fromLTRB(30,5,30,0),
-            width: MediaQuery.of(context).size.width*6/5,
-            child: TextField(
-              decoration: InputDecoration(
-                contentPadding: EdgeInsets.symmetric(vertical: 10),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10)
-                ),
-                hintText: '   **** *** ***'
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 60, 225, 0),
+              child: Text(
+                'New Password',
+                style: TextStyle(fontSize: 14),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(0,5,200,0),
-            child: Text('Confirm Password',style: TextStyle(fontSize: 14),),
-          ),
-          Container(
-            padding: EdgeInsets.fromLTRB(30,5,30,0),
-            width: MediaQuery.of(context).size.width*6/5,
-            child: TextField(
-              decoration: InputDecoration(
-                contentPadding: EdgeInsets.symmetric(vertical: 10),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10)
-                ),
-                hintText: '   **** *** ***'
+            Container(
+              padding: EdgeInsets.fromLTRB(30, 5, 30, 0),
+              width: MediaQuery.of(context).size.width * 6 / 5,
+              child: TextField(
+                decoration: InputDecoration(
+                    contentPadding: EdgeInsets.symmetric(vertical: 10),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    hintText: '   **** *** ***'),
               ),
             ),
-          ),
-           Padding(
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 5, 200, 0),
+              child: Text(
+                'Confirm Password',
+                style: TextStyle(fontSize: 14),
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.fromLTRB(30, 5, 30, 0),
+              width: MediaQuery.of(context).size.width * 6 / 5,
+              child: TextField(
+                decoration: InputDecoration(
+                    contentPadding: EdgeInsets.symmetric(vertical: 10),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    hintText: '   **** *** ***'),
+              ),
+            ),
+            Padding(
               padding: EdgeInsets.only(top: 280),
               child: Container(
                 width: MediaQuery.of(context).size.width * 3 / 5,
@@ -72,12 +74,14 @@ class _PasswordPageState extends State<PasswordPage> {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => SuccessPage() ,
+                          builder: (context) => SuccessPage(),
                         ),
                       );
                     },
                     child: Text(
-                      'Reset-Password', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                      'Reset-Password Now',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.white),
                     ),
                   ),
                 ),
