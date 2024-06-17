@@ -77,7 +77,7 @@ class _PasswordPageState extends State<PasswordPage> {
                       );
                     },
                     child: Text(
-                      'Reset  Password', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                      'Reset-Password', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                     ),
                   ),
                 ),
